@@ -19,7 +19,7 @@ public class cameramovement : MonoBehaviour
     }
 
     // Update is called once per frame
-    public void FixedUpdate()
+    public void Update()
     {
         if(orientation == null){
             OGobj = GameObject.FindWithTag("orientation");
