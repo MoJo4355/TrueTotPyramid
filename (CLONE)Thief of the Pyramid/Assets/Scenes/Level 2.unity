@@ -48590,8 +48590,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3629cac36b2be6c418a9ed01786e7cbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sensX: 500
-  sensY: 500
+  sensX: 100
+  sensY: 100
   OGobj: {fileID: 0}
   orientation: {fileID: 17109333317665281}
 --- !u!222 &7894662364523118228
