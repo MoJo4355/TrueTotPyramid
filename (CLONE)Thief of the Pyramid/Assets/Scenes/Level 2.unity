@@ -44604,6 +44604,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9177021908899042751}
   m_CullTransparentMesh: 1
+--- !u!1 &556892287068621011
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6058646663810635176}
+  - component: {fileID: 4252340083263152442}
+  - component: {fileID: 7621200020855178384}
+  m_Layer: 5
+  m_Name: Objective_
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!114 &582214133382906275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44639,6 +44657,9 @@ MonoBehaviour:
   Blocker: {fileID: 0}
   LScreen: {fileID: 1903738126}
   StartDoor: {fileID: 0}
+  FindTreasure: {fileID: 7138589955118120584}
+  FindExit: {fileID: 2586535138456881000}
+  ObjectiveParent: {fileID: 556892287068621011}
   PauseMenu: {fileID: 8345236512480675462}
   Resume: {fileID: 8468492617365046257}
   MainMenu: {fileID: 5670499369313776209}
@@ -44736,6 +44757,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!224 &724992617907365312
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2586535138456881000}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6058646663810635176}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 233, y: -3}
+  m_SizeDelta: {x: 361.1777, y: 80.9078}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &726984134891214470
 GameObject:
   m_ObjectHideFlags: 0
@@ -45722,6 +45762,24 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &2586535138456881000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 724992617907365312}
+  - component: {fileID: 5960821132698280218}
+  - component: {fileID: 8705718632223786904}
+  m_Layer: 5
+  m_Name: Find Exit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
 --- !u!224 &2591098818184014080
 RectTransform:
   m_ObjectHideFlags: 0
@@ -46756,6 +46814,14 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 885602420708683034}
   m_CullTransparentMesh: 1
+--- !u!222 &4252340083263152442
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556892287068621011}
+  m_CullTransparentMesh: 1
 --- !u!224 &4255385740066906166
 RectTransform:
   m_ObjectHideFlags: 0
@@ -47667,6 +47733,14 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 5.967001, y: 5.6963573, z: 21.107368}
   m_Center: {x: 2.1547108, y: -1.1169188, z: 4.2886467}
+--- !u!222 &5960821132698280218
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2586535138456881000}
+  m_CullTransparentMesh: 1
 --- !u!222 &6021855728645572758
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -47707,6 +47781,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CObject: {fileID: 0}
   cameraPosition: {fileID: 1787813832102845408}
+--- !u!224 &6058646663810635176
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556892287068621011}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8534718168566815345}
+  - {fileID: 724992617907365312}
+  m_Father: {fileID: 8858873300102079148}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -132, y: -356}
+  m_SizeDelta: {x: 361.1777, y: 80.9078}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &6060589699158431075
 RectTransform:
   m_ObjectHideFlags: 0
@@ -48359,6 +48454,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4096965906536469880}
   m_CullTransparentMesh: 1
+--- !u!1 &7138589955118120584
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8534718168566815345}
+  - component: {fileID: 8744343019537618279}
+  - component: {fileID: 7732404879339716368}
+  m_Layer: 5
+  m_Name: Collect Treasure
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!114 &7279965439561795324
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48476,6 +48589,40 @@ Transform:
   m_Children: []
   m_Father: {fileID: 5449701198052485442}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7621200020855178384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556892287068621011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: b31824210f0c5534fa9f52bbdb1b5a3e, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Objective:'
 --- !u!224 &7682430923853714873
 RectTransform:
   m_ObjectHideFlags: 0
@@ -48514,6 +48661,40 @@ RectTransform:
   m_AnchoredPosition: {x: 4.7231, y: -25.453888}
   m_SizeDelta: {x: 361.1777, y: 80.9078}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &7732404879339716368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7138589955118120584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: b31824210f0c5534fa9f52bbdb1b5a3e, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Collect Treasure
 --- !u!114 &7857449644062795624
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48966,6 +49147,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!224 &8534718168566815345
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7138589955118120584}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6058646663810635176}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 233, y: 0}
+  m_SizeDelta: {x: 361.1777, y: 80.9078}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &8573270493325345769
 RectTransform:
   m_ObjectHideFlags: 0
@@ -49386,6 +49586,40 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &8705718632223786904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2586535138456881000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: b31824210f0c5534fa9f52bbdb1b5a3e, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Find the exit
 --- !u!224 &8717772199021541710
 RectTransform:
   m_ObjectHideFlags: 0
@@ -49420,6 +49654,14 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!222 &8744343019537618279
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7138589955118120584}
+  m_CullTransparentMesh: 1
 --- !u!33 &8769633830129802014
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -49480,6 +49722,7 @@ RectTransform:
   - {fileID: 7682430923853714873}
   - {fileID: 2625509713716600296}
   - {fileID: 6383829284937412663}
+  - {fileID: 6058646663810635176}
   m_Father: {fileID: 2119716546}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}

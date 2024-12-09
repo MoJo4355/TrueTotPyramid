@@ -31,6 +31,7 @@ public class turnon : MonoBehaviour
         attack.enabled = false;
         Essentials.SetActive(false);
         Lore.SetActive(true);
+        Picks.ObjectiveParent.SetActive(true);
     }
 
     // Update is called once per frame
@@ -43,6 +44,9 @@ public class turnon : MonoBehaviour
             CM.enabled = true;
             PM.enabled = true;
             attack.enabled = true;
+            Picks.ObjectiveParent.SetActive(true);
+            Picks.FindTreasure.SetActive(true);
+            Picks.FindExit.SetActive(false);
         }
 
         if(BC.enlightened == true)

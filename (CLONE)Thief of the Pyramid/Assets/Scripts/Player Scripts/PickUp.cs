@@ -34,6 +34,11 @@ public class PickUp : MonoBehaviour
     public GameObject Blocker;
     public GameObject LScreen;
     public GameObject StartDoor;
+    public GameObject FindTreasure;
+    public GameObject FindExit;
+    public GameObject ObjectiveParent;
+    public GameObject Blockade;
+    public GameObject Hall;
 
     [Header("PAUSE MENU OBJECTS")]
     public GameObject PauseMenu;
@@ -406,6 +411,13 @@ public class PickUp : MonoBehaviour
         if(Remaining == 0)
         {
             TheDoorisOpen = true;
+            FindTreasure.SetActive(false);
+            FindExit.SetActive(true);
+            if(SceneName == "Tutorial")
+            {
+                Blockade.SetActive(true);
+                Hall.SetActive(false);
+            }
         }
 
     }
@@ -435,6 +447,11 @@ public class PickUp : MonoBehaviour
             GuiderOn = true;
             StartUp.SetBool("Raise", true);
             Invoke("BetterWay", 4.3f);
+        }
+
+        if(other.name == "Lighttrigger")
+        {
+
         }
 
         if(other.gameObject.tag == "mainDoor")
