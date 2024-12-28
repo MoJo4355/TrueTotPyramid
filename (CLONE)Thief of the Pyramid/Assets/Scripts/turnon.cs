@@ -20,6 +20,7 @@ public class turnon : MonoBehaviour
     public Attack attack;
     public PlayerMovement PM;
     public cameramovement CM;
+    public bool loredump;
 // Ill try to use this script to act as the manager for the first level(tutorial)
     void Start()
     {
@@ -32,22 +33,28 @@ public class turnon : MonoBehaviour
         Essentials.SetActive(false);
         Lore.SetActive(true);
         Picks.ObjectiveParent.SetActive(true);
+        loredump = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if(loredump == true)
         {
-            Essentials.SetActive(true);
-            Lore.SetActive(false);
-            CM.enabled = true;
-            PM.enabled = true;
-            attack.enabled = true;
-            Picks.ObjectiveParent.SetActive(true);
-            Picks.FindTreasure.SetActive(true);
-            Picks.FindExit.SetActive(false);
+            if (Input.GetKeyDown(KeyCode.Mouse0))
+            {
+                Essentials.SetActive(true);
+                Lore.SetActive(false);
+                CM.enabled = true;
+                PM.enabled = true;
+                attack.enabled = true;
+                Picks.ObjectiveParent.SetActive(true);
+                Picks.FindTreasure.SetActive(true);
+                Picks.FindExit.SetActive(false);
+                loredump = false;
+            }
         }
+        
 
         if(BC.enlightened == true)
         {

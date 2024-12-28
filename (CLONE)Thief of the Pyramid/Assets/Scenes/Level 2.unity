@@ -8570,14 +8570,14 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 1, b: 0.2216981, a: 1}
+  m_Color: {r: 1, g: 0.82500005, b: 0.06132078, a: 1}
   m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 0.13
@@ -44660,6 +44660,8 @@ MonoBehaviour:
   FindTreasure: {fileID: 7138589955118120584}
   FindExit: {fileID: 2586535138456881000}
   ObjectiveParent: {fileID: 556892287068621011}
+  Blockade: {fileID: 0}
+  Hall: {fileID: 0}
   PauseMenu: {fileID: 8345236512480675462}
   Resume: {fileID: 8468492617365046257}
   MainMenu: {fileID: 5670499369313776209}
