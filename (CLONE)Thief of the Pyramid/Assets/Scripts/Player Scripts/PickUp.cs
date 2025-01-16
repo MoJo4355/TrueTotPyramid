@@ -264,7 +264,7 @@ public class PickUp : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 Destroy(doorInteract.gameObject);
-                if(SceneName == "Tutorial")
+                if(SceneName == "Tutorial" || SceneName == "Prototype")
                 {
                     CallofEnemy.Play();
                     BroadcastEnemy1 = true;
@@ -413,7 +413,7 @@ public class PickUp : MonoBehaviour
             TheDoorisOpen = true;
             FindTreasure.SetActive(false);
             FindExit.SetActive(true);
-            if(SceneName == "Tutorial")
+            if(SceneName == "Tutorial" || SceneName == "Prototype")
             {
                 Blockade.SetActive(true);
                 Hall.SetActive(false);

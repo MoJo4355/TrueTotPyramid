@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Ehealth : MonoBehaviour
@@ -17,12 +18,15 @@ public class Ehealth : MonoBehaviour
     public EnemyNav Env;
     public AudioSource hit;
     public AudioSource groan;
+    public string SceneName;
+    public Scene scene;
 
 
     // Start is called before the first frame update
     public void Awake()
     {
-
+        scene = SceneManager.GetActiveScene();
+        SceneName = scene.name;
     }
 
     void Start()
@@ -34,19 +38,24 @@ public class Ehealth : MonoBehaviour
         AudioSource[] Sources = GetComponents<AudioSource>();
         groan = Sources[0];
         hit = Sources[1];
+
+        if (SceneName == "Prototype")
+        {
+            print("have fun");
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        //if (Health <= 0)
-        //{
-           // GCollider.isTrigger = true;
-            //gameObject.GetComponent<Animator>().SetFloat("locomotion", 0);
-            //gameObject.GetComponent<Animator>().SetBool("isDead", true);
-            //Destroy(gameObject, 2);
-        //}
+        if (Health <= 0)
+        {
+        if (SceneName == "Prototype")
+        {
+            Destroy(gameObject);
+        }
+        }
     }
 
     private void OnCollisionEnter(Collision collision){
@@ -56,11 +65,19 @@ public class Ehealth : MonoBehaviour
             hit.Play();
             if (Health <= 0)
             {
-                GCollider.isTrigger = true;
-                //agent.enabled = false;
-                gameObject.GetComponent<Animator>().SetFloat("locomotion", 0);
-                gameObject.GetComponent<Animator>().SetBool("isDead", true);
-                Destroy(gameObject, 2.3f);
+                if(SceneName == "Prototype")
+                {
+                    Destroy(gameObject);
+                }
+                else
+                {
+                    GCollider.isTrigger = true;
+                    //agent.enabled = false;
+                    gameObject.GetComponent<Animator>().SetFloat("locomotion", 0);
+                    gameObject.GetComponent<Animator>().SetBool("isDead", true);
+                    Destroy(gameObject, 2.3f);
+                }
+
                
             }
         }

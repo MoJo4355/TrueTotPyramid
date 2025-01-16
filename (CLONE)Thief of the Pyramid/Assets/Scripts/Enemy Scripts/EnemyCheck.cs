@@ -36,12 +36,12 @@ public class EnemyCheck : MonoBehaviour
         enemyCount = GameObject.FindGameObjectsWithTag("Enemy").Length;
         if (enemyCount == 0)
         {
-            if(SceneName == "Tutorial")
+            if(SceneName == "Tutorial" || SceneName == "Prototype")
             {
                 Invoke("DoorGoUp", 2f);
             }
         }
-        if(SceneName == "Tutorial")
+        if(SceneName == "Tutorial" || SceneName == "Prototype")
         {
             if (picks.BroadcastEnemy1 == true)
             {

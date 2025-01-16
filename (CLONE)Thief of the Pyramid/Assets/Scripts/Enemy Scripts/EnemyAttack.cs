@@ -30,7 +30,6 @@ public class EnemyAttack : MonoBehaviour
         Player = GameObject.FindGameObjectWithTag("Player");
          PH = Player.GetComponent<PlayerHealth>();
         Enemy = gameObject.transform.parent.gameObject;
-        Debug.LogError(Enemy);
         agent = Enemy.GetComponent<NavMeshAgent>();
         Eanim = Enemy.GetComponent<Animator>();
         EH = Enemy.GetComponent<Ehealth>();

@@ -20,6 +20,10 @@ public class EnemyNav : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         Player = GameObject.FindWithTag("Player");
         target = Player.transform;
+        if(name == "MT")
+        {
+            return;
+        }
         if(name == "MummyTrapped(Clone)")
         {
             gameObject.GetComponent<Animator>().SetFloat("locomotion", 1);
