@@ -34,6 +34,7 @@ public class Onclick : MonoBehaviour
         cardSwoop.Stop();
         TitleScreen.SetActive(true);
         OptionScreen.SetActive(false);
+        LScreen.SetActive(false);
     }
     void Start()
     {

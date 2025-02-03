@@ -10,6 +10,8 @@ using UnityEngine.UI;
 public class Ehealth : MonoBehaviour
 {
     public int Health;
+    public int maxHealth;
+    public HealthBar healthBar;
 
     public Attack atk;
     public NavMeshAgent agent;
@@ -39,6 +41,8 @@ public class Ehealth : MonoBehaviour
         groan = Sources[0];
         hit = Sources[1];
 
+        Health = maxHealth;
+
         if (SceneName == "Prototype")
         {
             print("have fun");
@@ -61,7 +65,7 @@ public class Ehealth : MonoBehaviour
     private void OnCollisionEnter(Collision collision){
         if(collision.gameObject.name == "Bullet(Clone)"){
             Destroy(collision.gameObject);
-            Health -= 10;
+            takeDamage(10);
             hit.Play();
             if (Health <= 0)
             {
@@ -81,5 +85,11 @@ public class Ehealth : MonoBehaviour
                
             }
         }
+    }
+
+    public void takeDamage(int damage)
+    {
+        Health -= damage;
+        healthBar.UpdateHealth((float)Health / (float)maxHealth);
     }
 }

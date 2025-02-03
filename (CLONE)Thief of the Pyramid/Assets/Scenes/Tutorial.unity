@@ -5995,7 +5995,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: dac3595838441df40be7d90a396747c3, type: 3}
+    m_Font: {fileID: 12800000, guid: b31824210f0c5534fa9f52bbdb1b5a3e, type: 3}
     m_FontSize: 10
     m_FontStyle: 0
     m_BestFit: 1
@@ -8635,11 +8635,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 154034792949517672, guid: 7e6bc94d418a2c74895b4a90cf7247f6, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1500
+      value: 1965.407
       objectReference: {fileID: 0}
     - target: {fileID: 154034792949517672, guid: 7e6bc94d418a2c74895b4a90cf7247f6, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 800
+      value: 1039.55
       objectReference: {fileID: 0}
     - target: {fileID: 154034792949517672, guid: 7e6bc94d418a2c74895b4a90cf7247f6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8671,7 +8671,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 154034792949517672, guid: 7e6bc94d418a2c74895b4a90cf7247f6, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -1540
+      value: -1735
       objectReference: {fileID: 0}
     - target: {fileID: 154034792949517672, guid: 7e6bc94d418a2c74895b4a90cf7247f6, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -12827,7 +12827,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: dac3595838441df40be7d90a396747c3, type: 3}
+    m_Font: {fileID: 12800000, guid: b31824210f0c5534fa9f52bbdb1b5a3e, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 1
@@ -13322,7 +13322,7 @@ GameObject:
   - component: {fileID: 6766757365256915046}
   m_Layer: 0
   m_Name: Camera
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15526,8 +15526,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: dac3595838441df40be7d90a396747c3, type: 3}
-    m_FontSize: 90
+    m_Font: {fileID: 12800000, guid: b31824210f0c5534fa9f52bbdb1b5a3e, type: 3}
+    m_FontSize: 60
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -16979,8 +16979,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: dac3595838441df40be7d90a396747c3, type: 3}
-    m_FontSize: 90
+    m_Font: {fileID: 12800000, guid: b31824210f0c5534fa9f52bbdb1b5a3e, type: 3}
+    m_FontSize: 60
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -17137,8 +17137,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: dac3595838441df40be7d90a396747c3, type: 3}
-    m_FontSize: 90
+    m_Font: {fileID: 12800000, guid: b31824210f0c5534fa9f52bbdb1b5a3e, type: 3}
+    m_FontSize: 60
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0

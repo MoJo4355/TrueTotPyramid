@@ -168,6 +168,7 @@ public class PickUp : MonoBehaviour
         HOLDER.SetActive(false);
         Scream1.SetActive(false);
         ScreamHolder.SetActive(false);
+        LScreen.SetActive(false);
         //scripts
 
     }
